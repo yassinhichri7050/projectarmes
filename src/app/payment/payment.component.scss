@@ -1,0 +1,89 @@
+/* Conteneur de la page de paiement avec fond noir et image en arrière-plan */
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Fond noir */
+    background-image: url('https://c.wallhere.com/photos/28/ea/gun_knife_ammunition_GSG_5_HK_MP5_weapon-357300.jpg!d'); /* Remplace par l'URL de ton image */
+    background-size: cover; /* L'image couvre toute la surface */
+    background-position: center; /* Centrer l'image */
+    background-attachment: fixed; /* Effet de parallaxe lors du défilement */
+    padding: 20px;
+    color: #fff; /* Texte en blanc pour contraste */
+  }
+  
+  /* Titre de la page */
+  .payment-title {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ff0266; /* Ombre pour effet de survol */
+  }
+  
+  /* Formulaire de paiement */
+  .payment-form {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour contraste */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Style des champs de formulaire */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #bbb; /* Couleur claire pour les labels */
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border: 1px solid #ff0266; /* Bordure rose au focus */
+  }
+  
+  /* Style du bouton de paiement */
+  .payment-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #ff0266;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-button:hover {
+    background-color: #ff4081; /* Couleur rose plus claire au survol */
+  }
+  
+  /* Améliorations pour le responsive */
+  @media (max-width: 768px) {
+    .payment-form {
+      padding: 20px;
+    }
+  
+    .payment-title {
+      font-size: 2.5rem;
+    }
+  }
+  

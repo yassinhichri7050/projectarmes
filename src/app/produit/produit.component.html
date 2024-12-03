@@ -1,0 +1,15 @@
+<div class="product-container">
+  <h1 class="product-title">Nos Armes à Vendre</h1>
+
+  <div class="product-list">
+    <div class="product-card" *ngFor="let produit of produits">
+      <img [src]="produit.imageUrl" alt="image produit" class="product-image" />
+      <div class="product-details">
+        <h2 class="product-name">{{ produit.nom }}</h2>
+        <p class="product-description">{{ produit.description }}</p>
+        <p class="product-price">{{ formatPrice(produit.prix) }}</p>
+        <button routerLink="/payment" routerLinkActive="router-link-active" mat-raised-button color="accent" class="buy-button">Acheter</button>
+      </div>
+    </div>
+  </div>
+</div>

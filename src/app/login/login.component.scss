@@ -1,0 +1,111 @@
+/* Conteneur principal avec un fond sombre */
+.account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: 
+    url('https://th.bing.com/th/id/R.d16ddf2b002e98ce9d7e47d43c7da9ef?rik=QzYbTnQWXqgzgQ&pid=ImgRaw&r=0'); /* Remplace par le chemin de ton image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+}
+
+/* Carte contenant le formulaire */
+.account-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fond noir avec transparence */
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+/* Titre de la carte */
+mat-card-title {
+  font-size: 2rem;
+  color: yellow; /* Jaune pour le titre */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Effet hover sur le titre */
+mat-card-title:hover {
+  color: #000; /* Texte noir au survol */
+  background-color: yellow; /* Fond jaune */
+}
+
+/* Formulaire de connexion */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style des champs de formulaire */
+mat-form-field {
+  width: 100%;
+}
+
+/* Personnalisation des champs de saisie */
+input {
+  color: black; /* Texte noir */
+  background-color: white; /* Fond blanc pour les champs */
+  border: 2px solid black; /* Bordure noire */
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Placeholder */
+input::placeholder {
+  color: black; /* Texte du placeholder noir */
+}
+
+/* Effet hover sur les champs */
+input:hover {
+  background-color: yellow; /* Jaune sur hover */
+  border-color: black; /* Bordure noire sur hover */
+}
+
+/* Style du bouton de connexion */
+.login-button {
+  background-color: yellow; /* Jaune pour le bouton */
+  color: black; /* Texte noir */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Effet hover sur le bouton */
+.login-button:hover {
+  background-color: black; /* Fond noir au hover */
+  color: yellow; /* Texte jaune */
+  transform: scale(1.05);
+}
+
+/* Focus sur le bouton */
+.login-button:focus {
+  outline: none;
+  border: 2px solid yellow; /* Bordure jaune lors du focus */
+}
+
+/* Appliquer un fond noir à toute l'application */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Fond noir */
+  color: white; /* Texte blanc */
+  font-family: Arial, sans-serif;
+}
+
+/* Enlever le fond blanc des éléments intégrés */
+* {
+  background: transparent;
+}

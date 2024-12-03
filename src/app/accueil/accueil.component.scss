@@ -1,0 +1,58 @@
+/* Conteneur principal avec un fond sombre */
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hauteur pleine page */
+    background-image: url('https://wallpapercave.com/wp/wp2524463.jpg'); /* Chemin vers l'image */
+    background-size: cover; /* Adapte l'image pour couvrir toute la page */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-color: #121212; /* Couleur de secours si l'image ne charge pas */
+    filter: brightness(0.6); /* Assombrit l'image légèrement */
+  }
+  
+  /* Style du titre */
+  .welcome-title {
+    font-size: 3.5rem; /* Taille du texte */
+    font-weight: bold;
+    color: #e0e0e0; /* Couleur de base (gris clair) */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Ombre pour lisibilité */
+    -webkit-text-stroke: 2px black; /* Contour noir autour du texte */
+    animation: dark-color-change 3s infinite; /* Animation des couleurs */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Couleurs sombres animées pour le titre */
+  @keyframes dark-color-change {
+    0% {
+      color: #bb86fc; /* Violet sombre */
+    }
+    50% {
+      color: #03dac6; /* Vert menthe */
+    }
+    100% {
+      color: #bb86fc; /* Retour au violet */
+    }
+  }
+  
+  /* Effet hover */
+  .welcome-title:hover {
+    transform: scale(1.1); /* Légère augmentation de taille */
+    color: #ff0266; /* Rose éclatant au survol */
+    -webkit-text-stroke: 2px #333; /* Contour légèrement plus clair au hover */
+  }
+  /* Appliquer un fond noir à toute l'application */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Noir */
+    color: #fff; /* Texte blanc pour contraste */
+    font-family: Arial, sans-serif; /* Assurez une bonne lisibilité */
+  }
+  
+  /* Enlever le fond blanc des éléments intégrés */
+  * {
+    background: transparent;
+  }
+  

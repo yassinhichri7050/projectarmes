@@ -1,0 +1,122 @@
+/* Style global */
+.product-container {
+  padding: 20px;
+  background-color: #121212; /* Fond sombre */
+  color: #fff; /* Texte blanc */
+  text-align: center;
+  background-image: url('https://th.bing.com/th/id/R.b1564a0820bb9ff2a7edc6e045bceb10?rik=eyXGBRz67WvoCQ&pid=ImgRaw&r=0'); /* Remplace par l'URL de ton image */
+  background-size: cover; /* L'image couvre toute la surface du conteneur */
+  background-position: center; /* Centrer l'image */
+  background-attachment: fixed; /* Pour l'effet de parallaxe quand on fait défiler */
+  background-color: rgba(0, 0, 0, 0.5); /* Dégradé sombre pour garder le contraste du texte */
+  padding: 50px 20px; /* Espacement autour du contenu */
+  color: #fff; /* Texte en blanc pour le contraste avec l'image */
+}
+
+/* Titre des produits avec animation multicolore */
+.product-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff; /* Couleur de base (blanc) */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  animation: multicolor 3s infinite; /* Animation multicolore infinie */
+  transition: transform 0.3s ease-in-out; /* Animation de transformation */
+  display: inline-block;
+}
+
+/* Animation pour le titre avec changement de couleurs */
+@keyframes multicolor {
+  0% {
+    color: #ff4081; /* Couleur rose */
+  }
+  25% {
+    color: #6200ea; /* Violet */
+  }
+  50% {
+    color: #03dac6; /* Vert menthe */
+  }
+  75% {
+    color: #bb86fc; /* Violet clair */
+  }
+  100% {
+    color: #ff4081; /* Retour au rose */
+  }
+}
+
+/* Effet de survol du titre pour augmenter la taille */
+.product-title:hover {
+  transform: scale(1.1); /* Augmente légèrement la taille du titre au survol */
+  color: #ff0266; /* Couleur rose éclatant au survol */
+  text-shadow: 0 0 15px #ff0266, 0 0 5px #ff0266; /* Ombre pour l'effet de survol */
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: rgba(28, 28, 28, 0.8); /* Fond semi-transparent pour la carte */
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-details {
+  margin-top: 10px;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+/* Modifier la couleur des prix en jaune */
+.product-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffcc00; /* Jaune pour les prix */
+}
+
+/* Style du bouton acheter avec couleurs noir et jaune */
+.buy-button {
+  background-color: black; /* Fond noir */
+  color: yellow; /* Texte jaune */
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+  border: none; /* Enlève la bordure */
+}
+
+/* Effet hover sur le bouton Acheter */
+.buy-button:hover {
+  background-color: yellow; /* Jaune sur hover */
+  color: black; /* Texte noir sur hover */
+  transform: scale(1.05);
+}
+
+.buy-button:focus {
+  outline: none;
+  border: 2px solid yellow; /* Bordure jaune lors du focus */
+}

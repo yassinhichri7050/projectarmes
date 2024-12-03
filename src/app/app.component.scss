@@ -1,0 +1,61 @@
+/* Toolbar */
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background-color: #333; /* Fond sombre */
+  color: #fff; /* Texte blanc */
+  height: 64px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Légère ombre */
+}
+
+/* Espace flexible */
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Titre dans la toolbar */
+.toolbar-title {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.toolbar-title strong {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc00; /* Couleur dorée */
+}
+
+.toolbar-title .subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-left: 0.5rem;
+}
+
+/* Liens dans la toolbar */
+.toolbar-links {
+  display: flex;
+  gap: 16px; /* Espacement entre les liens */
+}
+
+.toolbar-links a {
+  text-decoration: none; /* Supprime le soulignement */
+  color: #ffffff; /* Couleur du texte par défaut */
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 8px 12px; /* Ajout d'espace interne */
+  border-radius: 4px; /* Coins arrondis */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.toolbar-links a:hover {
+  background-color: #ffcc00; /* Fond jaune */
+  color: #000; /* Texte noir */
+}
+
+.toolbar-links a.active-link {
+  font-weight: bold;
+  border-bottom: 2px solid #ffcc00; /* Indicateur d'onglet actif */
+}

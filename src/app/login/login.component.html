@@ -1,0 +1,25 @@
+<div class="account-container">
+    <div class="account-card">
+      <mat-card-header>
+        <mat-card-title>Connexion</mat-card-title>
+        <mat-card-subtitle>Accédez à votre compte</mat-card-subtitle>
+      </mat-card-header>
+  
+      <mat-card-content>
+        <form class="login-form">
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Entrez votre email" />
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Mot de passe</mat-label>
+            <input matInput type="password" placeholder="Entrez votre mot de passe" />
+          </mat-form-field>
+  
+          <button (click)="logout()" routerLink="/produit" mat-raised-button color="accent" class="login-button">Se connecter</button>
+        </form>
+      </mat-card-content>
+    </div>
+  </div>
+  

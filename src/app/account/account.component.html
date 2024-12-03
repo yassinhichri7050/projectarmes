@@ -1,0 +1,29 @@
+<div class="account-container">
+  <mat-card class="account-card">
+    <mat-card-header>
+      <mat-card-title>Mon Compte</mat-card-title>
+      <mat-card-subtitle>Gérez vos informations personnelles</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form class="account-form">
+        <mat-form-field appearance="fill">
+          <mat-label>Nom d'utilisateur</mat-label>
+          <input matInput placeholder="Entrez votre nom d'utilisateur" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" placeholder="Entrez votre email" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Mot de passe</mat-label>
+          <input matInput type="password" placeholder="Entrez votre mot de passe" />
+        </mat-form-field>
+
+        <button mat-raised-button color="accent" class="save-button" routerLink="/login" routerLinkActive="router-link-active">Sauvegarder</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
